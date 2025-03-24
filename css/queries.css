@@ -99,6 +99,12 @@
     .footer-links a {
         font-size: 1rem;
     }
+
+    /* Ajuste específico para el logo móvil en este punto de quiebre */
+    .mobile-logo {
+        max-width: 80px; /* Reducir el tamaño del logo */
+        max-height: 40px; /* Reducir el tamaño del logo */
+    }
 }
 
 /* Orientación landscape específica para móviles */
@@ -108,7 +114,7 @@
     }
     
     .mobile-logo {
-        max-width: 30px;
+        max-width: 60px; /* Reducir aún más el tamaño del logo en landscape */
         max-height: 30px;
     }
 
@@ -189,7 +195,7 @@
     }
     
     .mobile-logo {
-        max-width: 35px;
+        max-width: 60px; /* Ajuste final para pantallas muy pequeñas */
         max-height: 35px;
         height: auto;
         margin-right: 10px;

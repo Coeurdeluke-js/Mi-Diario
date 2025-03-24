@@ -1,0 +1,28 @@
+/* Main styles and global variables */
+body {
+    font-family: 'Exo 2', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fafafa;
+    line-height: 1.6;
+    display: flex;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-grow: 1;
+    position: relative;
+    flex-direction: row;
+}
+
+/* Common elements and utilities */
+.mobile-header {
+    display: none;
+}
+
+/* For mobile queries - placeholder for linking to queries.css */
+@media (max-width: 768px) {
+    /* Mobile styles are in queries.css */
+}

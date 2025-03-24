@@ -1,0 +1,93 @@
+/* Asegúrate de que tu CSS para el header incluya estas características */
+
+header {
+    width: 60px;
+    background-color: #333;
+    color: #ec4d58;
+    text-align: left;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100vh; /* Altura fija como ventana completa */
+    box-sizing: border-box;
+    z-index: 4;
+    overflow: hidden;
+    transition: width 0.5s ease, opacity 0.5s ease, background-color 0.5s ease;
+    border-radius: 8px 8px 0 0;
+    margin-left: 1rem;
+    /* La posición top se ajustará con JavaScript */
+}
+
+header.expanded {
+    width: 250px;
+    opacity: 1;
+    background-color: #121212;
+}
+
+.header-content {
+    width: 230px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    transition-delay: 0.2s;
+    display: none; /* Ocultar el contenido cuando está colapsado */
+}
+
+header.expanded .header-content {
+    opacity: 1;
+    display: block; /* Mostrar el contenido cuando está expandido */
+}
+
+/* Asegúrate de que el footer tenga posición fija */
+#page-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
+
+#main-content {
+    transition: margin-left 0.5s ease, opacity 0.5s ease;
+    padding-bottom: 70px; /* Ajusta este valor según la altura de tu footer */
+    position: relative;
+    z-index: 1;
+}
+
+#entries-container {
+    position: relative;
+}
+
+article:first-child {
+    margin-top: 0;
+    padding-top: 1rem;
+}
+
+.menu-toggle {
+    color: #ec4d58;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    align-self: flex-start;
+    transition: transform 0.3s ease;
+    width: 30px;
+    text-align: center;
+}
+
+.menu-toggle:hover {
+    transform: scale(1.1);
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    white-space: nowrap;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    max-height: 100px;
+    object-fit: contain;
+}

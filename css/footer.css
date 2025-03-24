@@ -1,0 +1,114 @@
+/* Footer components styling */
+#page-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Changed to #333 as requested */
+    padding: 0.5rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    height: 60px;
+    box-sizing: border-box;
+    transition: opacity 0.5s ease;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center; /* Changed from space-between since social icons were removed */
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Footer floating menu styling */
+.floating-menu {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 15;
+}
+
+.footer-menu-toggle {
+    width: 50px;
+    height: 50px;
+    background-color: #ec4d58;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.footer-menu-toggle:hover {
+    transform: scale(1.1);
+    background-color: #ff5a66;
+}
+
+.footer-menu-toggle i {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.footer-menu {
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    transform: scale(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+    z-index: 20;
+    opacity: 1;
+    transition: transform 0.3s ease, opacity 0.5s ease;
+}
+
+.footer-menu.show {
+    transform: scale(1);
+}
+
+.footer-menu.fade-out {
+    opacity: 0;
+}
+
+.footer-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-menu li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-menu li:last-child {
+    margin-bottom: 0;
+}
+
+.footer-menu a {
+    color: #fafafa;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    background-color: transparent;
+}
+
+.footer-menu a:hover {
+    background-color: rgba(236, 77, 88, 0.2);
+    transform: translateX(5px);
+}
+
+.footer-menu i {
+    margin-right: 0.8rem;
+    color: #ec4d58;
+}

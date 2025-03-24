@@ -27,6 +27,23 @@ const entries = {
             title: 'Entrada 5: Aprendiendo en la Tormenta',
             content: 'Anoche, mi hermano cenó en casa. Su vida es un torbellino. Le dije que lamento no haber sido su roca en tiempos difíciles, batallando mis propias guerras. Siempre fui honesto, aunque frágil. Pero, en mi esencia, lo vi brillar, protagonista de su vida, superando tormentas. No estuve en la tempestad, pero aprendimos juntos. Y esto, apenas comienza.',
             date: '24 de marzo de 2025'
+        },
+        {
+            title: 'Entrada 6: El laberinto de la justificación',
+            content: 'La ignorancia, ese manto oscuro que cubre nuestra comprensión, es el verdadero arquitecto de los problemas de la humanidad. La incapacidad de navegar situaciones complejas desencadena una cascada de reacciones que enredan aún más el tejido de la vida cotidiana. Sin embargo, ¿quién soy yo para arrojar la primera piedra? Yo también he sido un peregrino en el desierto del desconocimiento, y aún lo soy. La única diferencia es mi sed insaciable de aprendizaje, mi decisión de esculpir mi mente con el cincel de la educación. El miedo, ese titiritero invisible, controla gran parte de nuestras acciones. Buscamos refugio en la comodidad de lo conocido, evitamos el dolor a toda costa. Pero, ¿a qué precio? Me cuesta comprender cómo algunos culpan al gobierno de sus males económicos, sin siquiera examinar los cimientos de sus propios hábitos financieros. ¿Acaso no somos todos arquitectos de nuestro destino? No veo diferencias entre un obrero, un desamparado o un magnate. Todos compartimos la capacidad de aprender y aplicar ese conocimiento. La vida, en su esencia, es un reflejo de lo que hemos aprendido y cómo lo utilizamos.',
+            date: '24 de marzo de 2025'
+        },
+        {
+            title: 'Entrada 7: La alquimia de lo cotidiano',
+            content: 'Esta mañana, mientras preparaba mi mate cocido con limón, me pregunté cómo transformar las sobras en un manjar. La respuesta surgió como una chispa: trocearlas, endulzarlas y freírlas. El resultado fue un aperitivo exquisito, una creación culinaria nacida de la necesidad.Puede que algunos nutricionistas frunzan el ceño ante el aceite y el azúcar, pero mi enfoque es otro. Transformé "desechos" en un manjar, un acto de alquimia culinaria. Me sentí como un alquimista, capaz de convertir lo ordinario en extraordinario.',
+            date: '24 de marzo de 2025'
+        },
+        {
+            title: 'Entrada 8:  El espejo de la autocompasión',
+            content: 'Hoy, al despertar, me enfrenté al espejo de la autocompasión. Me pregunté por qué soy tan duro conmigo mismo, por qué me exijo tanto. ¿Acaso no merezco un poco de indulgencia?La autocompasión no es debilidad, sino un acto de valentía. Requiere reconocer nuestras imperfecciones y aceptarnos tal como somos. No se trata de justificar nuestros errores, sino de aprender de ellos y seguir adelante.La vida es un viaje lleno de altibajos. Habrá momentos de alegría y momentos de tristeza, momentos de éxito y momentos de fracaso. Lo importante es no perder la fe en nosotros mismos, recordar que somos capaces de superar cualquier obstáculo.La autocompasión es un bálsamo para el alma, un recordatorio de que somos humanos y merecemos amor y respeto, incluso de nosotros mismos.',
+            date: '23 de marzo de 2025'
         }
-    ]
+        
+    ],
+    
 };

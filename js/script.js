@@ -25,19 +25,21 @@ document.addEventListener('DOMContentLoaded', function() {
     menuToggle.classList.remove('fa-forward');
     menuToggle.classList.add('fa-backward');
 
-    // Función para ajustar la altura del header y el footer inicialmente
     function adjustInitialLayout() {
         const mainContentRect = mainContent.getBoundingClientRect();
         const pageFooterRect = pageFooter.getBoundingClientRect();
     
-        // Establecer una altura mínima para el contenido principal
+        // Set minimum height for main content
         mainContent.style.minHeight = `${window.innerHeight - mainContentRect.top - pageFooterRect.height}px`;
     
-        // Establecer la posición del footer
+        // Fix footer position
         pageFooter.style.position = 'fixed';
         pageFooter.style.bottom = '0';
         pageFooter.style.left = '0';
         pageFooter.style.right = '0';
+        
+        // Call the alignment function after layout adjustments
+        setTimeout(alignHeaderWithFirstEntry, 0);
     }
         
     // Función para mostrar las entradas con fade in escalonado

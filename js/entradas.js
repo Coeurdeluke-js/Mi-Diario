@@ -43,6 +43,18 @@ const entries = {
             content: 'Hoy, al despertar, me enfrenté al espejo de la autocompasión. Me pregunté por qué soy tan duro conmigo mismo, por qué me exijo tanto. ¿Acaso no merezco un poco de indulgencia?La autocompasión no es debilidad, sino un acto de valentía. Requiere reconocer nuestras imperfecciones y aceptarnos tal como somos. No se trata de justificar nuestros errores, sino de aprender de ellos y seguir adelante.La vida es un viaje lleno de altibajos. Habrá momentos de alegría y momentos de tristeza, momentos de éxito y momentos de fracaso. Lo importante es no perder la fe en nosotros mismos, recordar que somos capaces de superar cualquier obstáculo.La autocompasión es un bálsamo para el alma, un recordatorio de que somos humanos y merecemos amor y respeto, incluso de nosotros mismos.',
             date: '23 de marzo de 2025'
         }
+        '2025-03-25': [
+        {
+            title: 'Entrada 9: La Trampa del Sentido',
+            content: 'El propósito, esa obsesión humana. ¿Qué somos, qué hacemos, adónde vamos? Preguntas que resuenan en el vacío, buscando una respuesta que quizás no exista. ¿Es el sentido de la vida más que una invención de nuestro ego, una forma de justificar nuestra existencia? "Yo valgo, yo merezco", nos repetimos, como un mantra para calmar la angustia. Pero, ¿no es esa búsqueda una trampa, una distracción del simple hecho de existir? ¿Por qué necesitamos tanto significado, tanta razón, para simplemente ser? La mente, ese torbellino incesante, nos arrastra a la búsqueda, nos impide fluir con el mundo. He leído a Søren Kierkegaard, con su énfasis en la subjetividad y la elección individual, y a Martin Heidegger, con su exploración del "ser-para-la-muerte" y la autenticidad. Ambos me hacen cuestionar si la búsqueda de propósito es una forma de evitar la confrontación con nuestra propia finitud. Creo que la clave está en el autoconocimiento, en la exploración de nuestras emociones, en la construcción de nuestra propia verdad. Solo entonces, desde la individualidad, podemos darle forma a nuestra existencia, sin buscar justificaciones externas.',
+            date: '25 de marzo de 2025'
+        },
+        {
+            title: 'Entrada 10: El Desafío de la Autenticidad',
+            content: 'Ser auténtico, ese desafío constante. En un mundo que nos empuja a la conformidad, a la búsqueda de validación externa, ¿cómo encontramos nuestra propia voz? ¿Cómo nos liberamos de las expectativas, de los "deberías" y los "tienes que"? El ego, ese maestro del disfraz, nos susurra al oído que debemos ser perfectos, exitosos, admirados. Pero, ¿no es esa búsqueda una trampa, una forma de perdernos en la multitud? La autenticidad no es un destino, es un camino, una exploración constante de nuestro ser. Implica cuestionar nuestras creencias, desafiar nuestras zonas de confort, abrazar nuestra individualidad. Es un acto de rebeldía contra la mediocridad, contra la conformidad, contra el miedo a ser diferentes. Y es en esa rebeldía, en esa valentía de ser nosotros mismos, donde encontramos la verdadera libertad.',
+            date: '25 de marzo de 2025'
+        },
+    ]
         
     ],
     

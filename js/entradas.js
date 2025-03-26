@@ -35,7 +35,7 @@ const entries = {
         },
         {
             title: 'Entrada 7: La alquimia de lo cotidiano',
-            content: 'Esta mañana, mientras preparaba mi mate cocido con limón, me pregunté cómo transformar las sobras en un manjar. La respuesta surgió como una chispa: trocearlas, endulzarlas y freírlas. El resultado fue un aperitivo exquisito, una creación culinaria nacida de la necesidad.Puede que algunos nutricionistas frunzan el ceño ante el aceite y el azúcar, pero mi enfoque es otro. Transformé "desechos" en un manjar, un acto de alquimia culinaria. Me sentí como un alquimista, capaz de convertir lo ordinario en extraordinario.',
+            content: 'Esta mañana, mientras preparaba mi mate cocido con limón, me pregunté cómo transformar las sobras en un manjar. La respuesta surgió como una chispa: trocearlas, endulzarlas y freírlas. El resultado fue un aperitivo exquisito, una creación culinaria nacida de la necesidad. Puede que algunos nutricionistas frunzan el ceño ante el aceite y el azúcar, pero mi enfoque es otro. Transformé "desechos" en un manjar, un acto de alquimia culinaria. Me sentí como un alquimista, capaz de convertir lo ordinario en extraordinario.',
             date: '24 de marzo de 2025'
         },
         {
@@ -55,6 +55,18 @@ const entries = {
             title: 'Entrada 10: El Desafío de la Autenticidad',
             content: 'Ser auténtico, ese desafío constante. En un mundo que nos empuja a la conformidad, a la búsqueda de validación externa, ¿cómo encontramos nuestra propia voz? ¿Cómo nos liberamos de las expectativas, de los "deberías" y los "tienes que"? El ego, ese maestro del disfraz, nos susurra al oído que debemos ser perfectos, exitosos, admirados. Pero, ¿no es esa búsqueda una trampa, una forma de perdernos en la multitud? La autenticidad no es un destino, es un camino, una exploración constante de nuestro ser. Implica cuestionar nuestras creencias, desafiar nuestras zonas de confort, abrazar nuestra individualidad. Es un acto de rebeldía contra la mediocridad, contra la conformidad, contra el miedo a ser diferentes. Y es en esa rebeldía, en esa valentía de ser nosotros mismos, donde encontramos la verdadera libertad.',
             date: '25 de marzo de 2025'
+        },
+    ],
+    '2025-03-26': [
+        {
+            title: 'Entrada 11: La Tiranía de la Distracción',
+            content: 'Resulta casi increíble cómo la sociedad ha tejido hábitos tan perjudiciales para la salud, especialmente para ese órgano complejo y fascinante que es el cerebro. Me intriga profundamente la naturaleza de nuestras decisiones, cómo ejercemos esa voluntad que, cuando se combina con la desinformación y la ignorancia, se convierte en un cóctel explosivo. No soy neurocientífico, pero me apasiona explorar los recovecos de la mente humana. Y desde esa perspectiva, observo cómo el aprendizaje, ese proceso intrincado y hermoso, se ve constantemente saboteado por distracciones que nosotros mismos elegimos. El cerebro, como un jardín delicado, necesita espacio, silencio, un entorno propicio para florecer. Pero lo bombardeamos con estímulos constantes, con ruido, con información basura. Nos convertimos en nuestros propios verdugos, impidiendo que ese órgano maravilloso despliegue todo su potencial. ¿Acaso no merecemos darle a nuestro cerebro el respeto y la atención que se merece?',
+            date: '26 de marzo de 2025'
+        },
+        {
+            title: 'Entrada 10: La Voluntad y el Desconocimiento',
+            content: 'La voluntad, esa fuerza misteriosa que nos impulsa a actuar, me fascina y me aterra a partes iguales. Cuando se combina con el conocimiento, puede ser una herramienta poderosa para la transformación. Pero cuando se ejerce desde la ignorancia, desde la desinformación, se convierte en un arma de destrucción masiva. Observo a mi alrededor cómo las personas toman decisiones que perjudican su salud, su bienestar, su futuro, sin siquiera cuestionar sus hábitos. Se aferran a creencias obsoletas, a información falsa, a distracciones que les impiden ver la realidad. Y me pregunto, ¿cómo podemos romper ese círculo vicioso? ¿Cómo podemos despertar la curiosidad, el deseo de aprender, la voluntad de cambiar? No tengo todas las respuestas, pero sé que la clave está en la educación, en la apertura mental, en la valentía de cuestionar nuestras propias creencias. El cerebro, ese universo infinito, merece ser explorado, comprendido, respetado. Y nosotros, como habitantes de ese universo, tenemos la responsabilidad de cuidarlo, de cultivarlo, de hacerlo florecer.',
+            date: '26 de marzo de 2025'
         },
     ]
     

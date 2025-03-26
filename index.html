@@ -39,17 +39,18 @@
                 <h1>Mi Diario</h1>
                 <p>El eco de las decisiones: Un diario de transformación.</p>
                 
-                <div class="calendar">
-                    <div class="calendar-container calendar-clickable" id="calendar-title">
-                        <i class="fas fa-calendar-alt calendar-icon" id="calendar-toggle"></i>
-                        <h2>Calendario</h2>
-                    </div>
-                    <div class="calendar-content" id="calendar-content">
+                <div class="calendar-content" id="calendar-content">
+                    <div class="date-navigation">
+                        <button id="previous-day" class="nav-button">
+                            <i class="fas fa-angle-left"></i>
+                        </button>
                         <input type="date" id="date-selector" value="2025-03-24">
-                        <button id="view-entries">Ver Entradas</button>
+                        <button id="next-day" class="nav-button">
+                            <i class="fas fa-angle-right"></i>
+                        </button>
                     </div>
+                    <button id="view-entries">Ver Entradas</button>
                 </div>
-            </div>
         </header>
 
         <main id="main-content">
@@ -123,20 +124,32 @@
         </footer>
 
         <div class="floating-menu">
-            <div class="footer-menu-toggle" id="footer-menu-toggle">
-                <i class="fas fa-ellipsis-v"></i>
+            <div id="footer-menu-toggle" class="footer-menu-toggle">
+                <i class="fas fa-ellipsis-v"></i> <!-- Volviendo al icono de puntos suspensivos -->
             </div>
-            <div class="footer-menu" id="footer-menu">
+            <div id="footer-menu" class="footer-menu">
                 <ul>
-                    <li><a href="registro.html" class="menu-link"><i class="fas fa-user-plus"></i> Registrarse</a></li>
-                    <li><a href="inicio.html" class="menu-link"><i class="fas fa-sign-in-alt"></i> Iniciar Sesión</a></li>
-                    <li><a href="mailto:coeurdeluke.js@gmail.com" class="menu-link"><i class="fas fa-envelope"></i> Contacto</a></li>
+                    <li>
+                        <a href="registro.html" class="menu-link">
+                            <i class="fas fa-user-plus"></i> Registrarse
+                        </a>
+                    </li>
+                    <li>
+                        <a href="inicio.html" class="menu-link">
+                            <i class="fas fa-sign-in-alt"></i> Iniciar Sesión
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="menu-link">
+                            <i class="fas fa-envelope"></i> Contacto
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
-    </div>
-
     <script src="js/entradas.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 </html>

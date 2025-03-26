@@ -3,82 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Diario Personal</title>
+    <title>Inicio de Sesión - Mi Diario</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="logo.ico" type="image/x-icon">
-    <!-- Component-based CSS files -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/calendar.css">
-    <link rel="stylesheet" href="css/content.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/queries.css">
+    <link rel="stylesheet" href="css/inicio.css">
 </head>
 <body>
-    <!-- Cabecera móvil que solo aparece en pantallas pequeñas -->
-    <div class="mobile-header">
-        <div style="display: flex; align-items: center;">
-            <img src="logo.png" alt="Logo" class="mobile-logo">
-            <h2 class="mobile-title">Mi Diario</h2>
-        </div>
-        <i class="fas fa-bars menu-toggle" id="mobile-menu-toggle"></i>
-    </div>
-
     <div class="container">
-        <header id="main-header">
-            <!-- Botón de menú integrado en el header, con los nuevos iconos -->
-            <i class="fas fa-backward menu-toggle" id="menu-toggle"></i>
-            
-            <!-- Contenido del header que aparecerá con fade in -->
-            <div class="header-content">
-                <img src="logo.png" alt="Logo" class="logo">
-                <h1>Mi Diario</h1>
-                <p>El eco de las decisiones: Un diario de transformación.</p>
-                
-                <div class="calendar">
-                    <div class="calendar-container calendar-clickable" id="calendar-title">
-                        <i class="fas fa-calendar-alt calendar-icon" id="calendar-toggle"></i>
-                        <h2>Calendario</h2>
+        <main class="inicio-main">
+            <div class="inicio-container">
+                <h2>Iniciar Sesión</h2>
+                <form id="inicio-sesion-form">
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
                     </div>
-                    <div class="calendar-content" id="calendar-content">
-                        <input type="date" id="date-selector" value="2025-03-24">
-                        <button id="view-entries">Ver Entradas</button>
+                    <div class="form-group">
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="password" name="password" required>
                     </div>
+                    <button id="iniciar-sesion-btn">Iniciar Sesión</button>
+                </form>
+                <div id="inicio-sesion-error" style="opacity: 0; display: none;">
+                    Error al iniciar sesión.
                 </div>
-            </div>
-        </header>
-
-        <main id="main-content">
-            <div id="entries-container">
-                <!-- Las entradas se cargarán aquí -->
+                <p>¿No tienes una cuenta? <a href="registro.html">Regístrate</a></p>
+                <a href="index.html" class="back-button">
+                    <i class="fas fa-home"></i>
+                </a>
             </div>
         </main>
-        
-        <footer id="page-footer">
-            <div class="footer-content">
-                <p>&copy; 2025 Mi Diario</p>
-                <!-- Social media icons removed as requested -->
-            </div>
-        </footer>
-
-        <div class="floating-menu">
-            <div class="footer-menu-toggle" id="footer-menu-toggle">
-                <i class="fas fa-ellipsis-v"></i>
-            </div>
-            <div class="footer-menu" id="footer-menu">
-                <ul>
-                    <li><a href="registro.html" class="menu-link"><i class="fas fa-user-plus"></i> Registrarse</a></li>
-                    <li><a href="inicio.html" class="menu-link"><i class="fas fa-sign-in-alt"></i> Iniciar Sesión</a></li>
-                    <li><a href="mailto:coeurdeluke.js@gmail.com" class="menu-link"><i class="fas fa-envelope"></i> Contacto</a></li>
-                </ul>
-            </div>
-        </div>
     </div>
-
-    <script src="js/entradas.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/inicio.js"></script>
 </body>
 </html>

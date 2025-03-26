@@ -64,7 +64,7 @@ const entries = {
             date: '26 de marzo de 2025'
         },
         {
-            title: 'Entrada 10: La Voluntad y el Desconocimiento',
+            title: 'Entrada 12: La Voluntad y el Desconocimiento',
             content: 'La voluntad, esa fuerza misteriosa que nos impulsa a actuar, me fascina y me aterra a partes iguales. Cuando se combina con el conocimiento, puede ser una herramienta poderosa para la transformación. Pero cuando se ejerce desde la ignorancia, desde la desinformación, se convierte en un arma de destrucción masiva. Observo a mi alrededor cómo las personas toman decisiones que perjudican su salud, su bienestar, su futuro, sin siquiera cuestionar sus hábitos. Se aferran a creencias obsoletas, a información falsa, a distracciones que les impiden ver la realidad. Y me pregunto, ¿cómo podemos romper ese círculo vicioso? ¿Cómo podemos despertar la curiosidad, el deseo de aprender, la voluntad de cambiar? No tengo todas las respuestas, pero sé que la clave está en la educación, en la apertura mental, en la valentía de cuestionar nuestras propias creencias. El cerebro, ese universo infinito, merece ser explorado, comprendido, respetado. Y nosotros, como habitantes de ese universo, tenemos la responsabilidad de cuidarlo, de cultivarlo, de hacerlo florecer.',
             date: '26 de marzo de 2025'
         },

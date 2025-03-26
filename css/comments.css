@@ -1,0 +1,80 @@
+.entry-interactions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.comment-button,
+.like-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ec4d58;
+    font-size: 18px;
+    transition: transform 0.2s ease;
+}
+
+.comment-button:hover,
+.like-button:hover {
+    transform: scale(1.2);
+}
+
+.like-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.like-button.liked i {
+    animation: heart-pop 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+    color: #ec4d58;
+}
+
+@keyframes heart-pop {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.4) rotate(10deg); }
+}
+
+.comments-container {
+    margin-top: 15px;
+    border-top: 1px solid #444;
+    padding-top: 15px;
+}
+
+.comments-list {
+    margin-bottom: 15px;
+}
+
+.comment-form {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.comment-form.active {
+    display: flex;
+}
+
+.comment-textarea {
+    width: calc(100% - 30px); /* Reducido el ancho */
+    min-height: 80px;
+    background-color: #444;
+    border: 1px solid #555;
+    border-radius: 4px;
+    color: #fff;
+    padding: 10px;
+    resize: vertical;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.comment-submit {
+    align-self: flex-end;
+    background-color: #ec4d58;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}

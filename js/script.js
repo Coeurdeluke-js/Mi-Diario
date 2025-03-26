@@ -328,3 +328,21 @@ document.addEventListener('DOMContentLoaded', function() {
     // Ajustar alturas inicialmente
     adjustInitialLayout();
 });
+
+viewEntriesButton.addEventListener('click', () => {
+    const selectedDate = dateSelector.value;
+   
+    // Colapsar el header
+    mainHeader.classList.remove('expanded');
+    mainContent.classList.remove('shifted');
+    menuToggle.classList.remove('fa-backward');
+    menuToggle.classList.add('fa-forward');
+    
+    // Ocultar el calendario
+    calendarContent.classList.remove('show');
+   
+    // Efecto de fade out escalonado y luego mostrar nuevas entradas
+    fadeOutEntries(() => {
+        displayEntries(selectedDate, true);
+    });
+});

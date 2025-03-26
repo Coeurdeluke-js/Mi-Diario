@@ -3,41 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio de Sesión - Mi Diario</title>
+    <title>Mi Diario</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="logo.ico" type="image/x-icon">
+    <!-- Component-based CSS files -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/calendar.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/comments.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/queries.css">
 </head>
 <body>
+    <!-- Cabecera móvil que solo aparece en pantallas pequeñas -->
+    <div class="mobile-header">
+        <div style="display: flex; align-items: center;">
+            <img src="logo.png" alt="Logo" class="mobile-logo">
+            <h2 class="mobile-title">Mi Diario</h2>
+        </div>
+        <i class="fas fa-bars menu-toggle" id="mobile-menu-toggle"></i>
+    </div>
+
     <div class="container">
-        <main class="inicio-main">
-            <div class="inicio-container">
-                <h2>Iniciar Sesión</h2>
-                <form id="inicio-sesion-form">
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
+        <header id="main-header">
+            <!-- Botón de menú integrado en el header, con los nuevos iconos -->
+            <i class="fas fa-backward menu-toggle" id="menu-toggle"></i>
+            
+            <!-- Contenido del header que aparecerá con fade in -->
+            <div class="header-content">
+                <img src="logo.png" alt="Logo" class="logo">
+                <h1>Mi Diario</h1>
+                <p>El eco de las decisiones: Un diario de transformación.</p>
+                
+                <div class="calendar">
+                    <div class="calendar-container calendar-clickable" id="calendar-title">
+                        <i class="fas fa-calendar-alt calendar-icon" id="calendar-toggle"></i>
+                        <h2>Calendario</h2>
                     </div>
-                    <div class="form-group">
-                        <label for="password">Contraseña:</label>
-                        <input type="password" id="password" name="password" required>
+                    <div class="calendar-content" id="calendar-content">
+                        <input type="date" id="date-selector" value="2025-03-24">
+                        <button id="view-entries">Ver Entradas</button>
                     </div>
-                    <button id="iniciar-sesion-btn">Iniciar Sesión</button>
-                </form>
-                <div id="inicio-sesion-error" style="opacity: 0; display: none;">
-                    Error al iniciar sesión.
                 </div>
-                <p>¿No tienes una cuenta? <a href="registro.html">Regístrate</a></p>
-                <a href="index.html" class="back-button">
-                    <i class="fas fa-home"></i>
-                </a>
+            </div>
+        </header>
+
+        <main id="main-content">
+            <div id="entries-container">
+                <article class="diary-entry" data-entry-id="9">
+                    <h2>Entrada 9: La Trampa del Sentido</h2>
+                    <div class="entry-content">
+                        <p>El propósito, esa obsesión humana. ¿Qué somos, qué hacemos, adónde vamos? Preguntas que resuenan en el vacío, buscando una respuesta que quizás no existe...</p>
+                    </div>
+                    <div class="entry-footer">
+                        <div class="entry-meta">
+                            <span class="entry-date">25 de marzo de 2025</span>
+                        </div>
+                        <div class="entry-interactions">
+                            <button class="comment-button">
+                                <i class="fas fa-comment"></i>
+                            </button>
+                            <button class="like-button">
+                                <i class="far fa-heart"></i>
+                                <span class="like-count">0</span>
+                            </button>
+                        </div>
+                        
+                        <div class="comments-container" style="display: none;">
+                            <div class="comments-list">
+                                <!-- Existing comments will be dynamically added here -->
+                            </div>
+                            <form class="comment-form">
+                                <textarea class="comment-textarea" placeholder="Escribe un comentario..."></textarea>
+                                <button type="submit" class="comment-submit">Publicar</button>
+                            </form>
+                        </div>
+                </article>
+
+                <article class="diary-entry" data-entry-id="10">
+                    <h2>Entrada 10: El Desafío de la Autenticidad</h2>
+                    <div class="entry-content">
+                        <p>Ser auténtico, ese desafío constante. En un mundo que nos empuja a la conformidad, a la búsqueda incesante de validación externa...</p>
+                    </div>
+                    <div class="entry-footer">
+                        <div class="entry-meta">
+                            <span class="entry-date">26 de marzo de 2025</span>
+                        </div>
+                        <div class="entry-interactions">
+                            <button class="like-button" aria-label="Me gusta">
+                                <i class="far fa-heart"></i>
+                                <span class="like-count">0</span>
+                            </button>
+                            <button class="comment-toggle" aria-label="Comentar">
+                                <i class="far fa-comment"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="comments-container" style="display: none;">
+                        <div class="comments-list">
+                            <!-- Existing comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <textarea class="comment-textarea" placeholder="Escribe un comentario..."></textarea>
+                            <button type="submit" class="comment-submit">Publicar</button>
+                        </form>
+                    </div>
+                </article>
             </div>
         </main>
+        
+        <footer id="page-footer">
+            <div class="footer-content">
+                <p>&copy; 2025 Mi Diario</p>
+            </div>
+        </footer>
+
+        <div class="floating-menu">
+            <div class="footer-menu-toggle" id="footer-menu-toggle">
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+            <div class="footer-menu" id="footer-menu">
+                <ul>
+                    <li><a href="registro.html" class="menu-link"><i class="fas fa-user-plus"></i> Registrarse</a></li>
+                    <li><a href="inicio.html" class="menu-link"><i class="fas fa-sign-in-alt"></i> Iniciar Sesión</a></li>
+                    <li><a href="mailto:coeurdeluke.js@gmail.com" class="menu-link"><i class="fas fa-envelope"></i> Contacto</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <script src="js/inicio.js"></script>
+
+    <script src="js/entradas.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

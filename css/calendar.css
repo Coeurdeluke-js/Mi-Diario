@@ -1,75 +1,79 @@
-/* Calendar component styling */
-.calendar {
-    margin-top: 2rem;
-    background-color: transparent;
-    color: #fafafa;
-    border-radius: 8px;
-    padding: 1rem;
-}
-
-.calendar h2 {
+.date-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 1rem;
-    color: #fafafa;
+    font-family: 'Exo 2', sans-serif;
 }
 
-.calendar input,
-.calendar button {
-    font-family: 'Exo 2', sans-serif;
-    background-color: #333;
-    color: #fafafa;
+.date-navigation {
+    gap: 10px;
+}
+
+.nav-button {
+    background: none;
+    border: none;
+    color: #ec4d58;
+    font-size: 1.2rem;  /* Reduced icon size */
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    display: flex;
+    align-items: center;
+}
+
+.nav-button:hover {
+    transform: scale(1.1);
+}
+
+#view-entries {
+    background-color: #ec4d58;
+    color: white;
     border: none;
     padding: 0.5rem 1rem;
-    border-radius: 8px;
-    margin-bottom: 0.5rem;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.calendar-icon {
-    color: #ec4d58;
-    font-size: 1.5rem;
-    margin-right: 0.5rem;
-    transition: transform 0.3s ease;
+    border-radius: 4px;
     cursor: pointer;
-}
-
-.calendar-icon:hover {
-    transform: scale(1.2);
-}
-
-.calendar-clickable {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-}
-
-.calendar button {
-    background-color: #ec4d58;
-    font-weight: bold;
-    cursor: pointer;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.calendar button:hover {
-    transform: scale(1.05);
-    background-color: #ff5a66;
-}
-
-.calendar-container {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-}
-
-.calendar-content {
-    display: none;
-    margin-top: 1rem;
-}
-
-.calendar-content.show {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: 'Exo 2', sans-serif;
     display: block;
+    margin: 10px auto;  /* Center button */
+    width: fit-content;
 }
 
-#date-selector::-webkit-calendar-picker-indicator {
-    filter: invert(1);
+#view-entries:hover {
+    background-color: #f16872;
+    transform: scale(1.05);
+}
+
+#date-selector {
+    width: 200px;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+/* Bouncing animation for date limits */
+@keyframes bounce-limit {
+    0%, 100% { transform: translateX(0); }
+    20% { transform: translateX(-15px); }
+    40% { transform: translateX(10px); }
+    60% { transform: translateX(-5px); }
+    80% { transform: translateX(3px); }
+}
+
+.date-navigation.bounce-limit .nav-button,
+.date-navigation.bounce-limit #date-selector {
+    animation: bounce-limit 0.6s ease-in-out;
+}
+
+.nav-button.disabled {
+    color: #999;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.nav-button.disabled:hover {
+    transform: none;
 }

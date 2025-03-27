@@ -40,7 +40,7 @@ const entries = {
         },
         {
             title: 'Entrada 8:  El espejo de la autocompasión',
-            content: 'Hoy, al despertar, me enfrenté al espejo de la autocompasión. Me pregunté por qué soy tan duro conmigo mismo, por qué me exijo tanto. ¿Acaso no merezco un poco de indulgencia? La autocompasión no es debilidad, sino un acto de valentía. Requiere reconocer nuestras imperfecciones y aceptarnos tal como somos. No se trata de justificar nuestros errores, sino de aprender de ellos y seguir adelante. La vida es un viaje lleno de altibajos. Habrá momentos de alegría y momentos de tristeza, momentos de éxito y momentos de fracaso. Lo importante es no perder la fe en nosotros mismos, recordar que somos capaces de superar cualquier obstáculo. La autocompasión es un bálsamo para el alma, un recordatorio de que somos humanos y merecemos amor y respeto, incluso de nosotros mismos.',
+            content: 'Hoy, al despertar, me enfrenté al espejo de la autocompasión. Me pregunté por qué soy tan duro conmigo mismo, por qué me exijo tanto. ¿Acaso no merezco un poco de indulgencia?La autocompasión no es debilidad, sino un acto de valentía. Requiere reconocer nuestras imperfecciones y aceptarnos tal como somos. No se trata de justificar nuestros errores, sino de aprender de ellos y seguir adelante.La vida es un viaje lleno de altibajos. Habrá momentos de alegría y momentos de tristeza, momentos de éxito y momentos de fracaso. Lo importante es no perder la fe en nosotros mismos, recordar que somos capaces de superar cualquier obstáculo.La autocompasión es un bálsamo para el alma, un recordatorio de que somos humanos y merecemos amor y respeto, incluso de nosotros mismos.',
             date: '23 de marzo de 2025'
         }
         
@@ -68,6 +68,59 @@ const entries = {
             content: 'La voluntad, esa fuerza misteriosa que nos impulsa a actuar, me fascina y me aterra a partes iguales. Cuando se combina con el conocimiento, puede ser una herramienta poderosa para la transformación. Pero cuando se ejerce desde la ignorancia, desde la desinformación, se convierte en un arma de destrucción masiva. Observo a mi alrededor cómo las personas toman decisiones que perjudican su salud, su bienestar, su futuro, sin siquiera cuestionar sus hábitos. Se aferran a creencias obsoletas, a información falsa, a distracciones que les impiden ver la realidad. Y me pregunto, ¿cómo podemos romper ese círculo vicioso? ¿Cómo podemos despertar la curiosidad, el deseo de aprender, la voluntad de cambiar? No tengo todas las respuestas, pero sé que la clave está en la educación, en la apertura mental, en la valentía de cuestionar nuestras propias creencias. El cerebro, ese universo infinito, merece ser explorado, comprendido, respetado. Y nosotros, como habitantes de ese universo, tenemos la responsabilidad de cuidarlo, de cultivarlo, de hacerlo florecer.',
             date: '26 de marzo de 2025'
         },
+    ],
+    '2025-03-27': [
+        {
+            title: 'Entrada 13: El Eco del Pasado en el Presente Digital',
+            content: 'Observo los símbolos descendiendo en la pantalla, una especie de escritura moderna que se superpone a ecos de escrituras antiguas. No es solo la estética de Matrix, sino una ventana a cómo la conciencia repite patrones. La necesidad de dar forma al caos, de codificar la realidad, resuena con los jeroglíficos tallados en piedra, con los pergaminos iluminados, con los libros cifrados. ¿Acaso no somos todos escribas en diferentes épocas, intentando descifrar el mismo enigma? Me siento como Neo, despertando a la ilusión de la linealidad del tiempo, percibiendo el eterno retorno de los arquetipos. Y en este acto de codificación, me siento parte de esa cadena ininterrumpida, un eslabón más en la búsqueda de la verdad.',
+            date: '27 de marzo de 2025'
+        },
+        {
+            title: 'Entrada 14: La Ilusión de la Realidad y la Búsqueda de lo Auténtico',
+            content: 'La sociedad nos presenta el progreso como una línea ascendente, una historia de mejora constante. Pero la forma en que las cosas se repiten nos muestra la ilusión de la realidad que nos rodea. Los ciclos económicos, las guerras, las revoluciones... ¿acaso no son meras repeticiones de patrones antiguos? Observo los mercados, con sus fluctuaciones y sus crisis, y veo el mismo drama que se representó en el antiguo Egipto, en la Roma imperial, en la Edad Media. ¿Somos meros actores en un teatro cósmico, repitiendo los mismos guiones? La búsqueda de lo auténtico, el intento de romper la ilusión, de salir de la Matrix, es el impulso que ha guiado a los filósofos, a los místicos, a los rebeldes de todas las épocas. ¿Podremos, finalmente, despertar del sueño colectivo?',
+            date: '27 de marzo de 2025'
+        },
+        {
+            title: 'Entrada 15: La Chispa del Conocimiento y la Conexión Digital',
+            content: 'La curiosidad, la chispa que nos impulsa a explorar lo desconocido, a desafiar los límites de la realidad. Es el motor que ha impulsado la evolución humana desde el principio. Los navegantes antiguos, los astrónomos de antaño, los buscadores de conocimiento de todas las épocas... todos compartieron la misma sed de saber, la misma necesidad de conectar con algo más allá de lo inmediato. Y ahora, en la era digital, la chispa se ha convertido en un fuego enorme. La capacidad de crear mundos virtuales, de simular realidades alternativas, nos acerca a la posibilidad de construir nuestra propia realidad. ¿Acaso no somos los nuevos creadores, dando forma a la realidad digital? La búsqueda de la conexión con algo más grande, la necesidad de trascender lo tangible, es el impulso que ha guiado a los sabios, a los visionarios, a los buscadores de todas las épocas. ¿Podremos, finalmente, encontrar la respuesta en el código?',
+            date: '27 de marzo de 2025'
+        },
     ]
     
 };
+
+// Función para cargar comentarios
+function loadComments(entryId) {
+    fetch(`/api/comments/${entryId}`)
+        .then(response => response.json())
+        .then(comments => {
+            const commentsList = document.querySelector(`.comments-list[data-entry-id="${entryId}"]`);
+            commentsList.innerHTML = comments.map(comment => `<p>${comment.content} - ${comment.username}</p>`).join('');
+        });
+}
+
+// Función para enviar comentarios
+function submitComment(entryId, commentText) {
+    const user = JSON.parse(localStorage.getItem('user'));
+    if (!user) {
+        alert('Debes iniciar sesión para comentar.');
+        return;
+    }
+
+    fetch(`/api/comments`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${user.token}`
+        },
+        body: JSON.stringify({ entryId: entryId, content: commentText })
+    })
+        .then(response => {
+            if (response.ok) {
+                loadComments(entryId); // Recargar comentarios
+                document.getElementById('comment-text').value = ''; // Limpiar el textarea
+            } else {
+                alert('Error al enviar el comentario.');
+            }
+        });
+}

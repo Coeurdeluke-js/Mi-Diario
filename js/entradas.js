@@ -85,6 +85,23 @@ const entries = {
             content: 'La curiosidad, la chispa que nos impulsa a explorar lo desconocido, a desafiar los límites de la realidad. Es el motor que ha impulsado la evolución humana desde el principio. Los navegantes antiguos, los astrónomos de antaño, los buscadores de conocimiento de todas las épocas... todos compartieron la misma sed de saber, la misma necesidad de conectar con algo más allá de lo inmediato. Y ahora, en la era digital, la chispa se ha convertido en un fuego enorme. La capacidad de crear mundos virtuales, de simular realidades alternativas, nos acerca a la posibilidad de construir nuestra propia realidad. ¿Acaso no somos los nuevos creadores, dando forma a la realidad digital? La búsqueda de la conexión con algo más grande, la necesidad de trascender lo tangible, es el impulso que ha guiado a los sabios, a los visionarios, a los buscadores de todas las épocas. ¿Podremos, finalmente, encontrar la respuesta en el código?',
             date: '27 de marzo de 2025'
         },
+    ],
+    '2025-03-28': [
+        {
+            title: 'Entrada 16: Rust y el Lenguaje de la Seguridad',
+            content: 'Trabajar con Rust ha sido un viaje fascinante a las profundidades de la ciberseguridad. No es solo un lenguaje de programación; es una forma de pensar, un enfoque meticuloso para construir sistemas seguros. He llegado a entender que la programación, como la comunicación humana, se trata de precisión y claridad. Rust, en su complejidad, es como participar en un discurso altamente técnico en un idioma que pocos entienden. Exige un nivel de experiencia, una fluidez, que refleja la habilidad requerida para un diálogo humano eficaz. Esta experiencia me ha hecho apreciar los matices de la comunicación, la importancia de transmitir ideas complejas con exactitud e intención.',
+            date: '28 de marzo de 2025'
+        },
+        {
+            title: 'Entrada 17: Más Allá del Código: El Lenguaje Universal',
+            content: 'Cuanto más profundizo en Rust, más veo los paralelismos entre la codificación y el lenguaje. Ambos son herramientas para expresar ideas, para construir conexiones. Mientras que los lenguajes humanos como el español, el inglés o el francés nos permiten interactuar a nivel personal, los lenguajes de programación como Rust nos permiten comunicarnos con las máquinas, para crear sistemas que dan forma a nuestro mundo. El desafío de dominar Rust, de traducir conceptos abstractos en código funcional, no es diferente al desafío de dominar un idioma extranjero. Requiere paciencia, práctica y la voluntad de abrazar lo desconocido. Esta realización me ha inspirado a expandir mis horizontes lingüísticos, a usar este diario como un espacio tanto para la exploración técnica como para la adquisición del lenguaje.',
+            date: '28 de marzo de 2025'
+        },
+        {
+            title: 'Entrada 18: Uniendo Mundos: Rust, Español y el Arte de la Comunicación (Próximamente, Inglés)',
+            content: 'Este proyecto, este espacio digital donde comparto mis pensamientos y experiencias, se está convirtiendo en algo más que un diario personal. Es un experimento para unir mundos, para conectar la precisión técnica de Rust con el poder expresivo del idioma español. Al escribir en español, no solo estoy perfeccionando mis habilidades lingüísticas, sino también desafiándome a comunicar ideas complejas de una manera que resuene con una audiencia más amplia. Es una forma de traducir el intrincado lenguaje del código al lenguaje universal de la comprensión humana. Este viaje, esta exploración tanto de Rust como del español, es un testimonio del poder de la comunicación, la capacidad de conectar a través de diferentes idiomas y disciplinas. Y como parte de esta exploración, he decidido que las próximas entradas de este diario serán escritas en inglés, como un ejercicio adicional para mejorar mi dominio de este idioma y ampliar aún más mi capacidad de comunicación.',
+            date: '28 de marzo de 2025'
+        },
     ]
     
 };

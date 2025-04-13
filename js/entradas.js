@@ -102,14 +102,14 @@ const entries = {
             content: 'Este proyecto, este espacio digital donde comparto mis pensamientos y experiencias, se está convirtiendo en algo más que un diario personal. Es un experimento para unir mundos, para conectar la precisión técnica de Rust con el poder expresivo del idioma español. Al escribir en español, no solo estoy perfeccionando mis habilidades lingüísticas, sino también desafiándome a comunicar ideas complejas de una manera que resuene con una audiencia más amplia. Es una forma de traducir el intrincado lenguaje del código al lenguaje universal de la comprensión humana. Este viaje, esta exploración tanto de Rust como del español, es un testimonio del poder de la comunicación, la capacidad de conectar a través de diferentes idiomas y disciplinas. Y como parte de esta exploración, he decidido que las próximas entradas de este diario serán escritas en inglés, como un ejercicio adicional para mejorar mi dominio de este idioma y ampliar aún más mi capacidad de comunicación.',
             date: '28 de marzo de 2025'
         },
-    ]
+    ],
     '2030-04-13': [
         {
             title: 'Entrada 17: The Pink Tree That Grew from a Broken Mug',
             content: 'I don’t remember who said it first, but it’s true: the greatest promises aren’t made with words — they’re made with actions. Mine was absurd. Improvised. Real. That day wasn’t particularly dramatic. I didn’t lose millions. I didn’t gain anything either. I just dropped a mug — the usual one, with the worn-out Bitcoin logo. It broke into three pieces, like my account after the Luna crash, like my ego after leveraging without a stop-loss. Instead of binning it, I taped it back together with black electrical tape. Cheap. Ugly. Functional. A visible scar. I chose not to hide it. Then — I’ve no idea why — I went to the kitchen, grabbed a long pink plastic spoon, and stuck a tiny sign to the top. Just a post-it that read: “Japanese Tree Project — please do not touch.” I placed it inside the mug and left it on my desk, next to the charts. That was the beginning. Not of my fortune, but of my discipline. Whenever I felt like trading on impulse, I looked at it. Whenever I lost and wanted to smash something, I looked at it. Whenever I won and felt inflated, I looked at it. That ridiculous object reminded me that everything grows if nurtured — that even breaks can bloom — that it doesn’t matter what your present looks like if you know where you’re going. Today, it’s worth millions. Not in money. In meaning. In purpose. And though I now have offices, curved monitors, Swiss watches, and even a real bonsai… that broken mug with its pink spoon is still with me. In a glass case. Sign intact. Don’t touch it. It’s still growing.',
             date: '13 de abril de 2030'
         },
-    ]
+    ],
 };
 
 // Función para cargar comentarios

@@ -109,11 +109,12 @@ const entries = {
             content: 'I don’t remember who said it first, but it’s true: the greatest promises aren’t made with words — they’re made with actions. Mine was absurd. Improvised. Real. That day wasn’t particularly dramatic. I didn’t lose millions. I didn’t gain anything either. I just dropped a mug — the usual one, with the worn-out Bitcoin logo. It broke into three pieces, like my account after the Luna crash, like my ego after leveraging without a stop-loss. Instead of binning it, I taped it back together with black electrical tape. Cheap. Ugly. Functional. A visible scar. I chose not to hide it. Then — I’ve no idea why — I went to the kitchen, grabbed a long pink plastic spoon, and stuck a tiny sign to the top. Just a post-it that read: “Japanese Tree Project — please do not touch.” I placed it inside the mug and left it on my desk, next to the charts. That was the beginning. Not of my fortune, but of my discipline. Whenever I felt like trading on impulse, I looked at it. Whenever I lost and wanted to smash something, I looked at it. Whenever I won and felt inflated, I looked at it. That ridiculous object reminded me that everything grows if nurtured — that even breaks can bloom — that it doesn’t matter what your present looks like if you know where you’re going. Today, it’s worth millions. Not in money. In meaning. In purpose. And though I now have offices, curved monitors, Swiss watches, and even a real bonsai… that broken mug with its pink spoon is still with me. In a glass case. Sign intact. Don’t touch it. It’s still growing.',
             date: '13 de abril de 2030'
         },
-          '2025-06-21': [
+    ],
+     '2025-06-58': [
         {
             title: 'Entrada 18: Charla con Tiara',
-            content: 'Hoy tomé un desayuno con mi prima',
-            date: '21 de abriil de 2025'
+            content: 'Un momento ameno con Little Grasshoper! :)',
+            date: '13 de abril de 2030'
         },
     ],
 };
